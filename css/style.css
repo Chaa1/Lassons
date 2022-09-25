@@ -7,3 +7,22 @@
     border: none;
     outline: none;
 }
+
+.box{
+    height: 700px;
+    /* background-color: red; */
+    /* background-image: url("../images/3.jfif"); */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 400px; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-position: center 300px; */
+
+    /* что-бы не писать огромный код, можно в одну строку в таком порядке */
+    background:
+    url("../images/1.jfif") no-repeat center right/50%,
+    url("../images/3.jfif") no-repeat center left/30%,
+    #000;
+}
