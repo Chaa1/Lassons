@@ -7,3 +7,86 @@
     border: none;
     outline: none;
 }
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: #000;
+    transition: 1s ease-in-out;
+}
+
+/* .box:hover{
+    background: green;
+    width: 400px;
+    height: 400px;
+}
+
+.item{
+    width: 50px;
+    height: 50px;
+    background: green;
+    transition: 1s;
+}
+.box:hover .item{
+    background: red;
+    width: 200px;
+    height: 200px;
+} */
+
+/* .box:active{
+    background: red;
+} */
+
+/* input:focus{
+    border: 10px solid pink;
+}
+a:visited{
+    color: aquamarine;
+} */
+.menu ul{
+    font-size: 0;
+}
+.menu-item{
+    display: inline-block;
+    
+}
+ .menu-item-link{ 
+    padding: 10px 15px;
+    background: #000;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 20px;
+    transition: .5s;
+    
+ }
+
+ .menu-item:hover .menu-item-link{
+    background: orange;
+ }
+ /* .menu-item:first-child .menu-item-link{
+    background: red;
+ }
+ .menu-item:last-child .menu-item-link{
+    background: green;
+ } */
+ /* .menu-item:nth-child(4) .menu-item-link{
+    background: blue;
+ } */
+ /* .menu-item:nth-child(2n) .menu-item-link{
+    background: blue;
+ } */
+ /* .menu-item:nth-child(2n-1) .menu-item-link{
+    background: blue;
+ } */
+.menu-item-link::before{
+    content: '😀';
+    width: 10px;
+    height: 10px;
+}
+
+.menu-item-link::after{
+    content: '🐶';
+    width: 10px;
+    height: 10px;
+}
+
