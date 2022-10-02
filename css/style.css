@@ -7,3 +7,59 @@
     border: none;
     outline: none;
 }
+
+.wrap{
+    background: pink;
+    display: flex;
+    height: 500px;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse;*/
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-wrap: wrap;
+} 
+.item{
+    margin-bottom: 20px;
+    background: teal;
+    border: 2px solid orange;
+    width: 100px;
+    height: 100px;
+}
+
+/* .item-1{
+    order: 3;
+}
+.item-2{
+    order: 2;
+}
+.item-3{
+    order: 2;
+}
+.item-4{
+    order: 2;
+}
+.item-5{
+    order: 2;
+}
+.item-6{
+    order: 1;
+} */
+
+/* юitem-1{   
+}
+.item-2{
+}
+.item-3{
+}
+.item-4{
+}
+.item-5{
+} */
+.item-6{
+    align-self:flex-end;
+}
