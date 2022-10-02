@@ -1,4 +1,6 @@
-*,body,html{
+*,
+body,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,4 +8,94 @@
     list-style: none;
     border: none;
     outline: none;
+}
+
+.container {
+    max-width: 1070px;
+    margin: auto;
+}
+
+header {
+    padding-top: 50px;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 199.48px;
+    height: 39.22px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+}
+
+.menu-item.active::after,.menu-item:hover:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #5454D4;
+    bottom: -10px;
+    left: 0;
+}
+
+.menu-item.active .menu-link{
+    color: #000;
+}
+.menu-link{
+    font-size: 15px;
+    font-weight: 700;
+    color: #696871;
+}
+.btn{
+    padding: 19px 60px;
+    border-radius: 10px;
+    
+    color: #fff;
+    font-size: 700;
+    font-size: 17px;
+    cursor: pointer;
+}
+.header-btn{
+    background: #FF7143;
+}
+.head-section{
+    padding: 100px 0;
+    
+}
+
+.main-header{
+    margin-top: 92px;
+    margin-bottom: 30px;
+}
+.main-header h1{
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.header-description p{
+    font-size: 20px;
+    color: #696871;
+    line-height: 1.5;
+    letter-spacing: -1px;
+}
+.header-description{
+    margin-bottom: 50px;
+}
+.head-btn{
+    background: #5454D4;
+}
+
+.head-section .container{
+    padding-top: 1px;
+    background: url('../images/Group 3.png') no-repeat;
+    background-size: 610px;
+    background-position-x: right;
 }
