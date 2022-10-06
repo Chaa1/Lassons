@@ -36,6 +36,7 @@ header {
     position: relative;
 }
 
+/* добавили подчеркивание в меню */
 .menu-item.active::after,.menu-item:hover:after{
     content: '';
     position: absolute;
@@ -49,32 +50,35 @@ header {
 .menu-item.active .menu-link{
     color: #000;
 }
+
 .menu-link{
     font-size: 15px;
     font-weight: 700;
     color: #696871;
 }
+
 .btn{
     padding: 19px 60px;
     border-radius: 10px;
-    
     color: #fff;
     font-size: 700;
     font-size: 17px;
     cursor: pointer;
 }
+
 .header-btn{
-    background: #FF7143;
+    background: #5454D4;
 }
+
 .head-section{
     padding: 100px 0;
-    
 }
 
 .main-header{
     margin-top: 92px;
     margin-bottom: 30px;
 }
+
 .main-header h1{
     font-size: 80px;
     font-weight: 700;
@@ -86,9 +90,11 @@ header {
     line-height: 1.5;
     letter-spacing: -1px;
 }
+
 .header-description{
     margin-bottom: 50px;
 }
+
 .head-btn{
     background: #5454D4;
 }
@@ -98,4 +104,69 @@ header {
     background: url('../images/Group 3.png') no-repeat;
     background-size: 610px;
     background-position-x: right;
+    font-size: 0;
+}
+
+#bottom-btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #E7E7E7;
+    margin-left: 40px;
+    vertical-align: bottom;
+    background: url(../images/arrow-down.svg) no-repeat center;
+    background-position: center;
+    background-size: 50%;
+    cursor: pointer;
+}
+
+.partners-section{
+   pad: 60px 0; 
+}
+
+.logo-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row-rewerse{
+    flex-direction: row-reverse;
+}
+.subscription-section{
+    padding: 89px 0 55px;
+    border: 1px solid #000;
+}
+.info-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info-img img{
+    width: 348px;
+}
+
+.description-header h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #19191B;
+}
+
+.description p{
+    font-size: 20px;
+    color: #696871;
+    margin-top: 30px;
+}
+
+.description-link a{
+    color: #5454D4;
+    font-size: 17px;
+    font-weight: 700px;
+    display: block;
+    margin-top: 30px;
+}
+.info-description{
+    width: 460px;
 }
