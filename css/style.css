@@ -132,6 +132,7 @@ header {
     flex-wrap: wrap;
 }
 
+/* для рейверса двух обЪектов */
 .row-rewerse{
     flex-direction: row-reverse;
 }
@@ -169,4 +170,70 @@ header {
 }
 .info-description{
     width: 460px;
+}
+
+.metrix-section{
+    padding: 30px 0;
+}
+
+.services-item{
+    width: 307px;
+    float: left;
+    text-align: center;
+    margin-right: 49px;
+}
+
+.services-header{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.service-header h3{
+    font-size: 24px;
+}
+
+.services-description p{
+    color: #696871;
+    font-size: 16px;
+}
+
+.clear{
+    clear: both;
+}
+.plan-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan-header{
+    font-size: 60px;
+}
+.plan-section{
+    padding: 150px 0;
+}
+.switch-btn{
+    padding: 5px 6px;
+    background: #F7F7FB;
+    border-radius: 10px;
+    font-size: 0;
+}
+
+.switch-btn .btn{
+    padding: 17px 56px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.yerly-btn{
+    border-radius: 10px 0 0 10px;
+}
+
+.monthly-btn{
+    border-radius:  0 10px 10px 0;
+}
+
+.switch-btn .btn.active{
+    background: #5454D4;
+    color: #FFF;
 }
