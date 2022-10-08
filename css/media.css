@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px){
+    .item{
+        background: red;
+        width: 100%;
+        max-width: none;
+    }
+    .wrap{
+        max-width: none;
+        width: auto;
+        height: auto;
+        background: green;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .item{
+        background: teal;
+        width: 100%;
+        max-width: none;
+        border-radius: 20px;
+        border:5px solid lightcoral;
+    }
+    .wrap{
+        max-width: none;
+        width: auto;
+        height: auto;
+        background: green;
+    }
+}
