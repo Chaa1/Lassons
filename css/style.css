@@ -1,4 +1,6 @@
-*,body,html{
+*,
+body,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,4 +8,57 @@
     list-style: none;
     border: none;
     outline: none;
+}
+
+.main {
+    padding: 15px;
+}
+
+header {
+    padding: 20px;
+    background: grey;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+    pad: 30px;
+    background: lightgreen;
+    text-align: center;
+}
+
+.wrap {
+    display: flex;
+    margin-top: 10px;
+}
+
+aside{
+    width: 20%;
+    text-align: center;
+    background: orange;
+}
+.content{
+    width: 50%;
+    margin:  0 10px;
+}
+
+.side-menu{
+    width: 30%;
+    background: green;
+}
+
+.content h1{
+    padding: 30px;
+    background: orangered;
+}
+.content-text{
+    background: lightgrey;
+    text-align: left;
+    padding: 15px;
+}
+
+.content-text img{
+    width: 150px;
+    float: left;
 }

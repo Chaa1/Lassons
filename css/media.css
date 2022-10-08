@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+    .side-menu {
+        display: none;
+    }
+
+    .content {
+        width: 80%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    aside {
+        display: none;
+
+    }
+
+    .content {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .content h1{
+        text-align: center;
+    }
+
+    .content-text img{
+        float: none;
+        width: 100%;
+    }
+}
