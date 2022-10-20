@@ -1,0 +1,36 @@
+@import 'variable';
+@import 'mixins';
+
+*,body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+
+
+
+.box{
+    width: 1111px;
+    height: 695px;
+    background: $main-color;
+    &-midle1{
+        @include param-block(1111px, 255px, $color-grey); 
+    }
+    &-midle2{
+        display: flex;
+        .mini-box1{
+            @include param-block($width, $height, $color-green);
+        }
+        .mini-box2{
+            @include param-block($width, $height, $color-pink);
+        }
+        .mini-box3{
+            @include param-block($width, $height, $color-red);
+        }
+    }
+
+}

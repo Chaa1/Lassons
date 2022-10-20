@@ -1,9 +1,38 @@
-*,body,html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    border: none;
-    outline: none;
+*, body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
 }
+
+.box {
+  width: 1111px;
+  height: 695px;
+  background: yellow;
+}
+.box-midle1 {
+  width: 1111px;
+  height: 255px;
+  background: grey;
+}
+.box-midle2 {
+  display: flex;
+}
+.box-midle2 .mini-box1 {
+  width: 33.2%;
+  height: 100px;
+  background: green;
+}
+.box-midle2 .mini-box2 {
+  width: 33.2%;
+  height: 100px;
+  background: pink;
+}
+.box-midle2 .mini-box3 {
+  width: 33.2%;
+  height: 100px;
+  background: red;
+}/*# sourceMappingURL=style.css.map */
