@@ -23,16 +23,16 @@
 }
 .box-midle2 .mini-box1 {
   width: 33.2%;
-  height: 100px;
+  height: 100%;
   background: green;
 }
 .box-midle2 .mini-box2 {
   width: 33.2%;
-  height: 100px;
+  height: 100%;
   background: pink;
 }
 .box-midle2 .mini-box3 {
   width: 33.2%;
-  height: 100px;
+  height: 100%;
   background: red;
 }/*# sourceMappingURL=style.css.map */
