@@ -1,0 +1,95 @@
+@media screen and (max-width: 768px) {
+    .main-wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-image{
+        margin-top: 100px;
+        text-align: right;
+    }
+
+    .main-image img{
+        width: 80%;
+    }
+    .main-content .btn{
+        text-align: center;
+    }
+
+    /* далее код бургер-меню */
+    .menu-burger{
+       /* ранее в коде отключали бургер-меню командой display: none теперь ее включаем */
+        display: block;
+        /* блок бургера в котором лежат три палочки делаем релатів т.к. палочки будут абсолютами и разбегуться по єкрану */
+        position: relative;
+        transition: 1s ease-in-out;
+    }
+    .active-burger{
+        transition: 1s ease-in-out;
+    }
+    /* следующие 4 блока кода делают три паралельніе полоски когда не ектив и рест, когода ектив */
+    .active-burger div{
+        /* це дасть моливість рискам стати у одну лінію */
+       position: absolute; 
+       transition: 1s ease-in-out;
+    }
+
+    /* в бургере 3 палочки и с каждой нужно провести манипуляции */
+    .active-burger div:nth-child(2){
+        /* убрали среднюю палочку в бургере и верхняя с нижней соеденильсь образовав одну */
+        display: none;
+    }
+
+    /* разворачиваем палочку в бургере на 45 градусов тем самім они пересекутся образуя Х */
+    .active-burger div:nth-child(1){
+        transform: rotate(45deg);
+        right: 0;
+    }
+    .active-burger div:nth-child(3){
+        transform: rotate(-45deg);
+        right: 0;
+    }
+    .menu-list {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: #292929;
+        padding: 160px 20px;
+        border-radius: 0 10px 10px 0;
+        width: 50%;
+        height: 100vh;
+    }
+    .menu-item{
+        display: block;
+        margin: 25px 0; 
+    }
+
+    .menu-link{
+        font-size: 18px;
+    }
+    .list-active{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        padding: 0 20px;
+    }
+    .main-content .content-header h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .main-content .content-deskription p{
+        text-align: center;
+        font-size: 15px;
+    }
+    .menu-list {
+        width: 100%;
+    }
+}

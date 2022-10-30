@@ -1,0 +1,34 @@
+@mixin fc() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin fb() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin fa() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin pseudo($width, $height) {
+    content: '';
+    position: absolute;
+    width: $width;
+    height: $height;
+}
+
+@mixin font($size, $color, $weight, $family) {
+    font-size: $size;
+    color: $color;
+    width: $weight;
+    font-family: $family;
+}
