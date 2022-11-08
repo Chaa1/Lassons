@@ -1,53 +1,59 @@
 @media screen and (max-width: 768px) {
-    .main-wrap{
+    .main-wrap {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .main-image{
+
+    .main-image {
         margin-top: 100px;
         text-align: right;
     }
 
-    .main-image img{
+    .main-image img {
         width: 80%;
     }
-    .main-content .btn{
+
+    .main-content .btn {
         text-align: center;
     }
 
     /* далее код бургер-меню */
-    .menu-burger{
-       /* ранее в коде отключали бургер-меню командой display: none теперь ее включаем */
+    .menu-burger {
+        /* ранее в коде отключали бургер-меню командой display: none теперь ее включаем */
         display: block;
         /* блок бургера в котором лежат три палочки делаем релатів т.к. палочки будут абсолютами и разбегуться по єкрану */
         position: relative;
         transition: 1s ease-in-out;
     }
-    .active-burger{
+
+    .active-burger {
         transition: 1s ease-in-out;
     }
+
     /* следующие 4 блока кода делают три паралельніе полоски когда не ектив и рест, когода ектив */
-    .active-burger div{
+    .active-burger div {
         /* це дасть моливість рискам стати у одну лінію */
-       position: absolute; 
-       transition: 1s ease-in-out;
+        position: absolute;
+        transition: 1s ease-in-out;
     }
 
     /* в бургере 3 палочки и с каждой нужно провести манипуляции */
-    .active-burger div:nth-child(2){
+    .active-burger div:nth-child(2) {
         /* убрали среднюю палочку в бургере и верхняя с нижней соеденильсь образовав одну */
         display: none;
     }
 
     /* разворачиваем палочку в бургере на 45 градусов тем самім они пересекутся образуя Х */
-    .active-burger div:nth-child(1){
+    .active-burger div:nth-child(1) {
         transform: rotate(45deg);
         right: 0;
     }
-    .active-burger div:nth-child(3){
+
+    .active-burger div:nth-child(3) {
         transform: rotate(-45deg);
         right: 0;
     }
+
     .menu-list {
         position: fixed;
         left: -100%;
@@ -58,38 +64,116 @@
         width: 50%;
         height: 100vh;
     }
-    .menu-item{
+
+    .menu-item {
         display: block;
-        margin: 25px 0; 
+        margin: 25px 0;
     }
 
-    .menu-link{
+    .menu-link {
         font-size: 18px;
     }
-    .list-active{
+
+    .list-active {
         left: 0;
     }
+
+    .about-wrap {
+        flex-wrap: wrap-reverse;
+    }
+
+    .about-wrap-description p {
+        padding: 0;
+        width: 430px;
+    }
+
+    .about-wrap-description,
+    .about-wrap-image {
+        width: 100%;
+    }
+
+    .about-wrap-image {
+        margin-top: 80px;
+    }
+
+    .about-wrap-image img {
+        width: 300px;
+    }
+
+    .donation-section .donation-wrap{
+        flex-direction: column-reverse;
+
+    }
+
+    .bottom-section .main-wrap{
+        flex-direction: column;
+    }
+
+    .bottom-section .main-wrap-contaсt{
+        flex-direction: row;
+    }
+    
 }
 
-@media screen and (max-width: 640px){
-    .container{
+@media screen and (max-width: 480px) {
+    .container {
         padding: 0 20px;
     }
-}
 
-@media screen and (max-width: 480px){
-    .container{
-        padding: 0 20px;
-    }
-    .main-content .content-header h1{
+    .main-content .content-header h1 {
         text-align: center;
         font-size: 25px;
     }
-    .main-content .content-deskription p{
+
+    .main-content .content-deskription p {
         text-align: center;
         font-size: 15px;
     }
+
     .menu-list {
         width: 100%;
+    }
+
+    .about-wrap-description {
+        flex-basis: 100%;
+    }
+
+    .about-wrap-description p {
+        width: auto;
+    }
+
+    .section-header {
+        text-align: center;
+    }
+
+    .shelter-wrap__item {
+        width: 50%;
+    }
+
+    .slick-prev,.slick-next{
+       top: 100%;
+       margin-top: 20px;
+    }
+    .slick-prev{
+        left: 30%;
+    }
+    .slick-next{
+        right: 30%;
+    }
+    .pets{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .about-wrap-image {
+        flex-basis: 100%;
+    }
+
+    .about-wrap-image img {
+        width: 100%;
+    }
+    .shelter-wrap {
+        justify-content: space-between;
     }
 }
