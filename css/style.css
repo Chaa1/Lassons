@@ -1,9 +1,48 @@
-*,body,html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    border: none;
-    outline: none;
+*, body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
 }
+
+.wrap {
+  height: 100vh;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 2fr;
+  grid-template-areas: "blue orange orange" "red red red" "yellow yellow1 yellow2";
+}
+
+.blue {
+  grid-area: blue;
+  background: lightblue;
+}
+
+.orange {
+  grid-area: orange;
+  background: orange;
+}
+
+.red {
+  grid-area: red;
+  background: red;
+}
+
+.yellow {
+  grid-area: yellow;
+  background: yellow;
+}
+
+.yellow1 {
+  grid-area: yellow1;
+  background: yellow;
+}
+
+.yellow2 {
+  grid-area: yellow2;
+  background: yellow;
+}/*# sourceMappingURL=style.css.map */
