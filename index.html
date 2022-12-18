@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Lesson</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>JS</title>
 </head>
+
 <body>
-    
+    <script>
+
+    </script>
+    <section class="section">
+        <div class="container">
+            <div class="line"></div>
+            <div class="month-and-year-box">
+                <div class="year-now">1111</div>
+                <div class="month-now">222222222</div>
+            </div>
+        </div>
+        <script>
+            var week = 5;
+            var day = 7;
+            var d = new Date();
+            var num = d.getDate();
+           
+            var box = "class='day_box'";
+            document.write("<table>");
+                for(var i = 0; i < week; ++i){
+                    document.write("<tr>");
+                        for(var j = 0; j<day; ++j){
+                            document.write("<td "+box+">+d+</td>")
+                        }
+                    document.write("</tr>");
+                }
+                document.write("</table>");
+        </script>
+    </section>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>

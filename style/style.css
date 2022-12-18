@@ -1,0 +1,28 @@
+.container{
+    width: 1440;
+    padding: 10px;
+    background: green;
+}
+.line{
+    height: 2px;
+    background: gray;
+}
+.month-and-year-box{
+    display: flex;
+    justify-content: space-between;
+}
+.day_box{
+    width: 60px;
+    height: 100px;
+    background: yellow;
+}
+.year-now{
+    color: red;;
+}
+.month-now{
+    color: red;;
+}
+td{
+    color: black;
+    font-size: 14px;
+}
