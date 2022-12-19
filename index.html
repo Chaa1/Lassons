@@ -5,9 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Lesson</title>
+    <title>Document</title>
 </head>
 <body>
+<script>
+    var d = new Date(2022, 11, 1);
+    var week_day = d.getDay();
+    var day = d.getDate();
+    var month = d.getMonth();
+    var year = d.getFullYear();
+
+    var week=[
+        "Понеділок",
+        "Вівторок",
+        "Середа",
+        "Четвер",
+        "П'ятниця",
+        "Субота",
+        "Неділя",
+    ]
+    var month_arr=[
+        "Січень",
+        "Лютий",
+        "Березень",
+        "Квітень",
+        "Травень",
+        "Червень",
+        "Липень",
+        "Серпень",
+        "Вересень",
+        "Жовтнеь",
+        "Жовтнеь",
+        "Листопад",
+        "Грудень",
+    ]
+
+    //функція повертає останній день заданого місяця і року
+    function getLastDayOfMonth(year, month) {
+    var date = new Date(year, month+1, 0);
+    return date.getDate() + 1;//повернули останню дату вказаного місяця
+    }
+    document.write("<p>"+month_arr[month+1]+" / "+year+"</p>");
     
+    document.write("<table>");
+        // циклом роблю шапку
+        document.write("<thead>");
+        document.write("<tr>");
+        for(var j = 0; j < 7; ++j){
+            document.write("<th>"+week[j]+"</th>");
+        }
+        document.write("</tr>");
+        document.write("</thead>");
+
+        document.write("<tbody>");
+            //цей цикл тільки для першого тижня, оскільки не всі місяці починаються с понеділка
+        for(var i = 0; i < 1; ++i){
+            document.write("<tr>");
+                for(var j = 0; j < 7 ; ++j){
+                    if(j < week_day-1){
+                        document.write("<td></td>");
+                        day = 1;
+                    }
+                    else{
+                        document.write("<td>"+day+"</td>");
+                        day++; 
+                    } 
+                }
+            document.write("</tr>");  
+        }
+    //----------------------------------------------------------------
+    // останній цикл заповнює залишок днів з урахуванням останнього дня місяця
+    for(var i = 0; i < 4; ++i){
+        document.write("<tr>");
+            for(var j = 0; j < 7 ; ++j){
+                if(day < getLastDayOfMonth(year, month)){
+                    document.write("<td>"+day+"</td>");
+                    day++; 
+                }
+                else document.write("<td></td>");
+            } 
+                
+            document.write("</tr>");  
+        }
+        document.write("</tbody>");
+    document.write("</table>");
+</script>
+
 </body>
 </html>

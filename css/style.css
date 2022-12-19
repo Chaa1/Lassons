@@ -7,3 +7,25 @@
     border: none;
     outline: none;
 }
+/* делаем двойные границя ячеек и таблицы одинарними */
+table {
+    border-collapse: collapse;
+  }
+
+/* задаем стили строк и ячеек */
+td,
+th {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+    background: lightgreen;
+}
+
+th {
+    font-weight: bold;
+    background-color: #E6E6E6;
+}
+h1{
+    font-size: 16px;
+    color: red;
+}
